@@ -1,0 +1,11 @@
+/* Custom Streamlit adjustments */
+.stApp {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+.stButton>button {
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
