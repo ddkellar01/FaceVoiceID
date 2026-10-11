@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: facevoiceid-deployment
+  labels:
+    app: facevoiceid
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: facevoiceid
+  template:
+    metadata:
+      labels:
+        app: facevoiceid
+    spec:
+      containers:
+      - name: facevoiceid
+        image: facevoiceid:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: APP_ENV
+          value: "production"
