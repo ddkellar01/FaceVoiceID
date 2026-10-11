@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  facevoiceid:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    devices:
+      - "/dev/video0:/dev/video0"
+    environment:
+      - PYTHONUNBUFFERED=1
