@@ -1,8 +1,9 @@
 setuptools>=65.0.0
+wheel
 fastapi>=0.110.0
 uvicorn>=0.27.0
 httpx>=0.26.0
 pytest>=8.0.0
 dlib>=19.24.0
-face_recognition>=1.3.0
-git+https://github.com/ageitgey/face_recognition_models.git
+face-recognition>=1.3.0
+face-recognition-models @ git+https://github.com/ageitgey/face_recognition_models.git
