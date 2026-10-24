@@ -1,4 +1,4 @@
-name: Apex CI/CD Pipeline
+name: FaceVoiceID CI/CD Pipeline
 
 on:
   push:
