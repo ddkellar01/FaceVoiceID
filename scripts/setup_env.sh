@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+# Automatically navigate to the repository root directory (one level up from scripts/)
+cd "$(dirname "$0")/.."
+
 echo "Setting up FaceVoiceID environment dependencies..."
 
 if command -v apt-get &> /dev/null; then
